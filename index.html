@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+        <script src="js/script.js"></script>
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <title>Cotizaciones</title>
+        <link rel="icon" type="image/x-icon" href="images/logo.png">
+    </head>
+    <body>
+        <!-- Top Fixed -->
+        <div class="topFixed">
+            <div class="header flex">
+                <div class="divLogo">
+                    <span class="name logo"></span>
+                </div>
+                <span class="link" onclick="goTo('reservar')">Reservar</span>
+                <i class="menu backgroundStyle"></i>
+            </div> 
+        </div>
+
+        <!-- Menu -->
+        <div class="divMenu">
+            <div class="row">
+                <div class="divLogo">
+                    <span class="name logo"></span>
+                </div>
+                <i class="close backgroundStyle"></i>
+            </div>
+            <div class="links">
+                <p class="link" onclick="goTo('reservar')">Reservar</p>
+            </div>
+        </div>
+        
+        <!-- Section 1 -->
+        <div class="section1 divInputs">
+            <div class="content">
+                <div class="line1 flex">
+                    <div class="divOrigin flex flex1">
+                        <input type="text" id="txtOrigin" placeholder="Origen">
+                        <input type="text" id="txtDestination" placeholder="Destino">
+                    </div>
+                    <input type="button" id="btnQuote" value="Cotizar" onclick="quote()">
+                </div>
+                <div class="dates">
+
+                </div>
+                <div id="divResult">
+                    Total: $<span id="lblTotal"></span>
+                    <input type="button" id="btnSchedule" value="Agendar viaje" onclick="schedule()">
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="left">                
+            </div>
+            <div class="center"></div>
+            <div class="right">
+            </div>            
+        </div>
+
+        <div class="divIcoPhone btnGradient btnGoToCall hide">
+            <span class="material-symbols-outlined icoPhone">call</span>
+        </div>
+        <div class="divIcoPhone btnGoToCall"></div>
+    </body>
+</html>
