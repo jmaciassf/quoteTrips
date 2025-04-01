@@ -538,7 +538,7 @@ body > .footer p {}
 #btnSchedule {
     background: #0eae0e;
     display: block;
-    text-align: right;
+    /* text-align: right; */
     margin-left: auto;
     margin-top: 16px;
 }
@@ -772,6 +772,31 @@ body > .footer p {}
 
 
 
+@media (max-width:1200px)  {
+    .divOrigin, .line1 {
+        display: block;
+        background: inherit;
+    }
+    .divInputs input {
+    border-radius: 14px !important;!i;!;
+    margin-bottom: 16px;
+}
+    input, .divInputs input {
+        width: 100%;
+        flex: none;
+        display: block;
+        text-align: center;
+        margin-left: 0 !important;!i;!;
+    }
+
+    #divOrigin {
+        display: block;
+    }
+
+    #divResult {text-align: center;padding-top: 24px;}
+    
+    .section1 {padding: 120px 20px 40px 20px;}
+}
 
 @media (max-width: 1023px) {
    
@@ -882,7 +907,7 @@ body > .footer p {}
     .noWarning .section1 {
     padding-top: 45px;
 }
-    .section1 {padding: 120px 7px 7px 7px;}
+    .section1 {padding: 120px 20px 40px 20px;}
     .section1 .line1 { display: block; }
     .section1 .left {margin-top: 40px;}
     .section1 .title {text-align: center;margin-bottom: 10px;}
